@@ -1,13 +1,13 @@
 // Example express application adding the parse-server module to expose Parse
 // compatible API routes.
 const bodyParser = require('body-parser');
-const line = require('@line/bot-sdk');
+const Line = require('@line/bot-sdk');
 
 const line_config = {
     'channelAccessToken': 'f2MajD6Z345rRsMBa2Fy5mBZiIoKLHjXxTwzdwa+0u9bjU81Ol5xEzs9qGFbtZBq6pnWOcAPyr7rXct8ioiPTF0DGqIWMzkenvBgkknNQwyt+XiC1FCgw1et6wRZekd0UgXgofUuFA7o4VuhsYktmAdB04t89/1O/w1cDnyilFU=',
     'channelSecret': '06a81a47dc5dedd901520db7a464ed75'
-};git add .
-const client = now line.Client(line_config);
+};
+const client = new Line.Client(line_config);
 
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
