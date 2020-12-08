@@ -8,7 +8,6 @@ const line_config = {
     'channelSecret': '06a81a47dc5dedd901520db7a464ed75'
 };
 const client = new Line.Client(line_config);
-
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
